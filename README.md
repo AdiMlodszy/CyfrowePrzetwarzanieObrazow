@@ -1,6 +1,5 @@
 # Projekt – Detekcja 50 znaków drogowych przy użyciu YOLO
-
-To repozytorium zawiera kod, dane oraz dokumentację projektu, który ma na celu wykrywanie 50 różnych znaków drogowych z materiału wideo lub obrazów, z wykorzystaniem sieci YOLO (You Only Look Once).
+Ten projekt skupia się na wykrywaniu jednej kategorii – znaków drogowych – z materiału wideo lub obrazów, z wykorzystaniem sieci YOLO (You Only Look Once). Celem jest nauczenie modelu rozpoznawania znaków drogowych, które pojawiają się na wideo przez co najmniej 2 sekundy.
 
 ## Struktura repozytorium
 
