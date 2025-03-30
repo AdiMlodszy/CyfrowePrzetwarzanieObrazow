@@ -1,0 +1,5 @@
+train: /app/data/dataset/images/train
+val: /app/data/dataset/images/val
+
+names:
+  0: znak
