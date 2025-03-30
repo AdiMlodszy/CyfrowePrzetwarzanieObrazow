@@ -1,0 +1,40 @@
+# requirements.txt – Lista zależności dla projektu detekcji znaków drogowych YOLO
+
+# Framework uczenia maszynowego PyTorch (wersja CPU lub GPU)
+torch>=2.2.0
+
+# Dodatkowe narzędzia do PyTorch, szczególnie do obsługi obrazów
+torchvision>=0.17.0
+
+# YOLO od Ultralytics, zawiera YOLOv8 i narzędzia CLI
+ultralytics>=8.2.18
+
+# Biblioteka OpenCV do operacji na obrazach i wideo
+opencv-python>=4.9.0.80
+
+# Podstawowe biblioteki do analizy danych i obliczeń numerycznych
+numpy>=1.26.4
+pandas>=2.2.1
+
+# Biblioteka do wizualizacji wyników
+matplotlib>=3.8.3
+
+# Notatniki Jupyter do prototypowania i analiz
+jupyter>=1.0.0
+
+# Pasek postępu używany często podczas trenowania modeli
+tqdm>=4.66.2
+
+# Obsługa plików konfiguracyjnych YAML
+pyyaml>=6.0.1
+
+# Opcjonalne pakiety (odkomentuj, jeśli potrzebujesz dodatkowych narzędzi)
+# scikit-learn>=1.4.1
+
+
+# Instalacja wszystkich pakietów z pliku:
+# pip install -r requirements.txt
+
+# Użycie w Dockerfile:
+# COPY requirements.txt /app/
+# RUN pip install --no-cache-dir -r requirements.txt
