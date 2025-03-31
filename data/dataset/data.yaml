@@ -1,5 +1,5 @@
-train: /app/data/dataset/images/train
-val: /app/data/dataset/images/val
+train: /content/drive/MyDrive/CyfrowePrzetwarzanieObrazow/data/dataset/images/train
+val: /content/drive/MyDrive/CyfrowePrzetwarzanieObrazow/data/dataset/images/val
 
 names:
   0: znak

@@ -1,6 +1,6 @@
 data/dataset/images
 data/dataset/labels
-runs/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
