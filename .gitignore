@@ -1,6 +1,7 @@
 data/dataset/images
 data/dataset/labels
 runs/
+runs_predict/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
