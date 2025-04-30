@@ -7,14 +7,15 @@ Tutaj przechowujesz zbiór danych do trenowania i walidacji:
 **Struktura przykładowa**:
 ```
 data/
-  images/
-    train/
-    val/
-    test/
-  labels/
-    train/
-    val/
-    test/
+  dataset/
+    images/
+      train/
+      val/
+      test/
+    labels/
+      train/
+      val/
+      test/
 ```
 
 **Uwagi**:
