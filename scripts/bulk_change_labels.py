@@ -14,7 +14,7 @@ across multiple annotation files.
 import os
 
 # Configuration constants
-LABELS_FOLDER = "D:/CyfrowePrzetwarzanieObrazow/data/dataset/labels/train"
+LABELS_FOLDER = "D:/CyfrowePrzetwarzanieObrazow/data/dataset/labels/val"
 NEW_CLASS_ID = '0'
 
 def change_labels(folder_path, new_Class_id='0'):
