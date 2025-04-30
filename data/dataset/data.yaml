@@ -1,5 +1,5 @@
-train: /app/data/dataset/images/train
-val: /app/data/dataset/images/val
+train: ${LOCAL_TRAINING_DATA_PATH}
+val: ${LOCAL_VALIDATION_DATA_PATH}
 
 names:
   0: znak

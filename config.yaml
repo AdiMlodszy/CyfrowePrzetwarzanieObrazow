@@ -1,0 +1,36 @@
+# Configuration for YOLOv8n training pipeline
+
+local_paths:
+  dataset_yaml: ${LOCAL_DATA_YAML} # Path to the dataset YAML file
+  weights: ${LOCAL_WEIGHTS} # Path to the pre-trained weights file
+  output_dir: ${LOCAL_OUTPUT_DIR} # Directory to save the trained model and logs
+  training_data_path: ${LOCAL_TRAINING_DATA_PATH} # Path to the training data
+  validation_data_path: ${LOCAL_VALIDATION_DATA_PATH} # Path to the validation data
+
+cloud_paths:
+  dataset_yaml: ${CLOUD_DATA_YAML} # Path to the dataset YAML file in cloud storage
+  weights: ${CLOUD_WEIGHTS} # Path to the pre-trained weights file in cloud storage
+  output_dir: ${CLOUD_OUTPUT_DIR} # Directory in cloud storage to save the trained model and logs
+  training_data_path: ${CLOUD_TRAINING_DATA_PATH} # Path to the training data in cloud storage
+  validation_data_path: ${CLOUD_VALIDATION_DATA_PATH} # Path to the validation data in cloud storage
+
+training:
+  epochs: 50 # Number of epochs to train the model
+  batch: 16 # Batch size for training
+  imgsz: 640 # Image size for training
+  lr0: 0.003 # Initial learning rate
+  patience: 15 # Number of epochs with no improvement after which training will be stopped
+  optimizer: AdamW # Optimizer to use for training
+  resume: false # Whether to resume training from the last checkpoint
+  name: "new_dataset" # Name of the training run
+  cos_lr: false # Whether to use cosine learning rate schedule
+  plots: true # Whether to plot training results
+  exist_ok: true # Whether to overwrite existing results
+  save_period: 1 # Save model every N epochs
+  cache: true # Whether to cache images for faster training
+  workers: 2 # Number of workers for data loading
+  rect: true # Whether to use rectangular training
+
+meta:
+  local_config_source: ${LOCAL_CONFIG_SOURCE} # Path to the source of the configuration file
+  cloud_config_source: ${CLOUD_CONFIG_SOURCE} # Path to the source of the configuration file in cloud storage
